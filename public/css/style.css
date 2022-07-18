@@ -1,0 +1,20 @@
+body{
+    margin: 0px !important ;
+    background-color: rgb(230, 230, 230) !important ; 
+}
+
+
+#search{
+    background-color:#f0f0f1 !important;
+    width: 500px;
+
+    border-radius: 10px;
+}
+
+
+.carousel-indicators button{
+
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 100% !important;
+}
