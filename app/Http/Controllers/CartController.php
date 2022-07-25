@@ -6,6 +6,13 @@ use Illuminate\Http\Request;
 
 class CartController extends Controller
 {
+
+    function get(){
+
+
+        return view('cart');
+    }
+
     function add()
     {
 

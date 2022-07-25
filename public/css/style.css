@@ -1,6 +1,6 @@
 body{
     margin: 0px !important ;
-    background-color: rgb(230, 230, 230) !important ; 
+    background-color: rgb(230, 230, 230) !important ;
 }
 
 
@@ -17,4 +17,12 @@ body{
     width: 15px !important;
     height: 15px !important;
     border-radius: 100% !important;
+}
+
+.product_bg{
+    background-color: white;
+}
+
+.product_price{
+    background-color: rgba(100,101,147,0.1);
 }

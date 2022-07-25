@@ -1,4 +1,8 @@
-@include("header")
+@extends('template')
+@section('title')
+    خانه | صفحه اصلی فروشگاه سجاد شاپ
+@endsection
+@section('content')
 
 <div class="container">
     <div class="row mt-2">
@@ -714,4 +718,4 @@
     </div>
 </div>
 
-@include("footer")
+@endsection

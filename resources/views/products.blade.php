@@ -1,44 +1,49 @@
-@include("header")
+@extends('template')
 
-<div class="container-fluid">
-    <div class="row mt-3">
-        <div class="col-lg-4 ">
-            <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="true">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+@section('title')
+    صفحه محصولات
+@endsection
+
+
+@section('content')
+
+
+    <div class="container-fluid">
+        <div class="row mt-3">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header bg-light border-bottom border-secondary">
+                        <h5>محصولات </h5>
+                    </div>
+
+                    <div class="row p-4 ">
+                        @foreach($products as $product )
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <a href="product/{{$product->id}}" class="card border-0 text-decoration-none">
+                                <img src="{{$product->url}}" class="card-img-top p-3"
+                                     alt="iPhone 13 Pro Max ">
+                                <div class="card-body">
+                                    <p class="card-text text-dark">
+                                        {{$product->name}}
+                                    </p>
+                                </div>
+                                <ul class="list-group border-0 ">
+                                    <li
+                                        class="list-group-item d-flex justify-content-end align-items-center border-0 ">
+                                        <p class="fw-bolder"> {{$product->price}} تومان </p>
+                                    </li>
+
+                                </ul>
+                            </a>
+                        </div>
+                        @endforeach
+
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="{{url('/images/products/iphone13-g.jpg')}}" class=" img-fluid " alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="{{url('/images/products/iphone13-go.jpg')}}" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="{{url('/images/products/iphone13-gray.jpg')}}" class="d-block w-100" alt="...">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
-        </div>
-        <div class="col-lg-3">
-            
-        </div>
-
-        <div class="col-lg-3">
-
         </div>
     </div>
 
-</div>
 
-@include("footer")
+
+
+@endsection
