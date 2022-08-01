@@ -20,7 +20,7 @@
                         @foreach($products as $product )
                         <div class="col-lg-3 col-md-6 col-sm-12">
                             <a href="product/{{$product->id}}" class="card border-0 text-decoration-none">
-                                <img src="{{$product->url}}" class="card-img-top p-3"
+                                <img src="{{ url($product->images->first()->url) }}" class="card-img-top p-3"
                                      alt="iPhone 13 Pro Max ">
                                 <div class="card-body">
                                     <p class="card-text text-dark">

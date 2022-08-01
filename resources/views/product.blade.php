@@ -19,7 +19,7 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="{{url($products->url)}}" class=" img-fluid " alt="...">
+                        <img src="{{url($products->images->first()->url)}}" class=" img-fluid " alt="...">
                     </div>
                     <div class="carousel-item">
                         <img src="{{url('/images/products/iphone13-go.jpg')}}" class="d-block w-100" alt="...">
