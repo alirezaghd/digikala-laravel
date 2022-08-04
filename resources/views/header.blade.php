@@ -18,7 +18,11 @@
                            aria-label="Search" >
                 </form>
             </div>
+            @auth
+            <a class="btn btn-outline-danger" href="{{ url("/logout") }}">خروج از حساب کاربری </a>
+            @endauth
 
+            @guest()
             <!-- Button trigger modal -->
             <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
                     data-bs-target="#exampleModal">
@@ -49,6 +53,8 @@
 
 
             </div>
+
+            @endguest
             <button type="button" class="btn btn-outline-danger ms-3 ">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="24" fill="currentColor"
                      class="bi bi-cart" viewBox="0 0 16 16">

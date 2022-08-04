@@ -6,6 +6,7 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\CityController;
 use App\Http\Controllers\OrderController;
+use App\Http\Controllers\UserController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,6 +21,17 @@ use App\Http\Controllers\OrderController;
 Route::get('/', [HomeController::class,"index"]);
 Route::get('/product/{id}', [ProductController::class,"get"]);
 Route::get('/products', [ProductController::class,"get_all"]);
+
+Route::get('/login', [UserController::class,"login_get"]);
+Route::post('/login', [UserController::class,"login_post"]);
+
+Route::get('/register', [UserController::class,"register_get"]);
+Route::post('/register', [UserController::class,"register_post"]);
+
+Route::get('/logout', [UserController::class,"logout"]);
+
+Route::get('/profile', [UserController::class,"profile"])->middleware("auth");
+
 
 Route::get('/admin', [AdminController::class,"index"]);
 Route::get('/admin/cities', [CityController::class,"get_all"]);
