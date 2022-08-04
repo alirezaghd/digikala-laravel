@@ -17,6 +17,7 @@ class UserController extends Controller
     function login_post (Request $request)
     {
 
+
 //        if (is_numeric($request->get('email'))) {
 //            return ['phone' => $request->get('email'), 'password' => $request->get('password')];
 //        } elseif (filter_var($request->get('email'), FILTER_VALIDATE_EMAIL)) {
@@ -52,6 +53,13 @@ class UserController extends Controller
     }
 
     function register_post(Request $request){
+        
+             $this->validate($request, [
+            'email' => 'required|unique:users',
+            'name' => 'required|max:120',
+            'password' => 'required|min:8',
+            'password_confirmation' => 'same:password'
+        ]);
 
 
         $new_user = new User();
