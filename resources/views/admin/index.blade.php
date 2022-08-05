@@ -23,7 +23,7 @@
                         <div class="card overflow-hidden card-h-100">
                             <div class="card-body">
                                 <div class="d-flex justify-content-between">
-                                    <h5 class="font-size-15 text-uppercase mb-0">Customers</h5>
+                                    <h5 class="font-size-15 text-uppercase mb-0">مشتریان</h5>
                                     <div class="avatar-xs">
                                                         <span class="avatar-title rounded bg-soft-primary font-size-20 mini-stat-icon">
                                                             <i class="ri-user-line text-primary"></i>
@@ -32,7 +32,9 @@
                                 </div>
                                 <h3 class="font-size-24">26.46% <span
                                         class="text-success fw-normal font-size-14 ms-2">+8.34%</span></h3>
-                                <p class="text-muted mb-0">Total Users World wide</p>
+                                <p class="text-muted mb-0">مجموع کاربران در سراسر جهان
+
+                                </p>
                             </div><!-- end card-body -->
 
                             <!-- Project chart -->
@@ -44,7 +46,7 @@
                         <div class="card overflow-hidden card-h-100">
                             <div class="card-body">
                                 <div class="d-flex justify-content-between">
-                                    <h5 class="font-size-15 text-uppercase mb-0">Profit</h5>
+                                    <h5 class="font-size-15 text-uppercase mb-0">سود</h5>
                                     <div class="avatar-xs">
                                                         <span class="avatar-title rounded bg-soft-success font-size-20 mini-stat-icon">
                                                             <i class="ri-wallet-3-line text-success"></i>
@@ -54,7 +56,9 @@
                                 <h3 class="font-size-24">46,562
                                     <span class="text-danger fw-normal font-size-14 ms-2">+3.16%</span>
                                 </h3>
-                                <p class="text-muted mb-0">Total Users World wide</p>
+                                <p class="text-muted mb-0">مجموع کاربران در سراسر جهان
+
+                                </p>
                             </div><!-- end card-body -->
 
                             <!-- user chart -->
@@ -66,7 +70,7 @@
                         <div class="card overflow-hidden card-h-100">
                             <div class="card-body">
                                 <div class="d-flex justify-content-between">
-                                    <h5 class="font-size-15 text-uppercase mb-0">Orders</h5>
+                                    <h5 class="font-size-15 text-uppercase mb-0">سفارشات</h5>
                                     <div class="avatar-xs">
                                                         <span class="avatar-title rounded bg-soft-danger font-size-20 mini-stat-icon">
                                                             <i class="ri-shopping-cart-line text-danger"></i>
@@ -75,7 +79,9 @@
                                 </div>
                                 <h3 class="font-size-24">2048<span
                                         class="text-danger fw-normal font-size-14 ms-2">+3.16%</span></h3>
-                                <p class="text-muted mb-0">Total Users World wide</p>
+                                <p class="text-muted mb-0">مجموع کاربران در سراسر جهان
+
+                                </p>
                             </div><!-- end card-body -->
 
                             <!-- order chart -->
@@ -91,10 +97,11 @@
                         <div class="row align-items-center">
                             <div class="col-8">
                                 <div>
-                                    <h4 class="font-size-24 text-white text-truncate">Best Employee Shonen</h4>
-                                    <p class="text-white-50 mt-3">Thanks For begin such in our Medroc. You have done <b
-                                            class="text-white">57.6%</b> more sales today</p>
-                                    <h1 class="text-white mt-3 mb-0">4.3k</h1>
+                                    <h4 class="font-size-24 text-white text-truncate">بهترین کارمند شونن
+                                    </h4>
+                                    <p class="text-white-50 mt-3">با تشکر برای شروع چنین کاری در Medroc ما. شما  <b
+                                            class="text-white">57.6</b> امروز  درصد فروش بیشتری داشته اید</p>
+                                    <h1 class="text-white mt-3 mb-0">4.3 هزار</h1>
                                 </div>
                             </div>
 
@@ -113,7 +120,7 @@
             <div class="col-xl-8">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title mb-4">Sales Analytics</h4>
+                        <h4 class="card-title mb-4">تجزیه و تحلیل فروش</h4>
 
                         <div class="row align-items-center">
                             <div class="col-xl-8">
@@ -121,24 +128,24 @@
                             </div><!-- end col -->
 
                             <div class="col-xl-4">
-                                <h3 class="mt-2">$3,536.65</h3>
-                                <p class="text-muted">Curabitur lacinia eleifend justo eget
-                                    lobortis ipsum feugiat ornare.
-                                </p>
+                                <h3 class="mt-2"> 3,536.65</h3>
+{{--                                <p class="text-muted">Curabitur lacinia eleifend justo eget--}}
+{{--                                    lobortis ipsum feugiat ornare.--}}
+{{--                                </p>--}}
                                 <div class="mt-3">
                                     <div class="border-bottom py-3">
                                         <div class="d-flex align-items-center">
                                             <div id="mini-1" class="apex-charts"></div>
                                             <div class="flex-grow-1 ms-2">
                                                 <h4 class="mb-1 font-size-17">24,523</h4>
-                                                <span class="text-muted font-size-14">Total User</span>
+                                                <span class="text-muted font-size-14">کل کاربران</span>
                                             </div>
 
                                             <div class="flex-shrink-0 text-end">
                                                                 <span
                                                                     class="badge rounded-pill badge-soft-success font-size-12 fw-medium mb-1"><i
                                                                         class="mdi mdi-arrow-up-bold me-2"></i>2.65%</span>
-                                                <p class="text-muted font-size-14 mb-0">June 2021</p>
+                                                <p class="text-muted font-size-14 mb-0"> 2021</p>
                                             </div>
                                         </div>
                                     </div>
@@ -147,14 +154,14 @@
                                             <div id="mini-2" class="apex-charts"></div>
                                             <div class="flex-grow-1 ms-2">
                                                 <h4 class="mb-1 font-size-17">235M</h4>
-                                                <span class="text-muted font-size-14">Avarage sale</span>
+                                                <span class="text-muted font-size-14">میانگین فروش</span>
                                             </div>
 
                                             <div class="flex-shrink-0 text-end">
                                                                 <span
                                                                     class="badge rounded-pill badge-soft-success font-size-12 fw-medium mb-1"><i
                                                                         class="mdi mdi-arrow-up-bold me-2"></i>350k</span>
-                                                <p class="text-muted font-size-14 mb-0">June 2021</p>
+                                                <p class="text-muted font-size-14 mb-0"> 2021</p>
                                             </div>
                                         </div>
                                     </div>
@@ -163,14 +170,14 @@
                                             <div id="mini-3" class="apex-charts"></div>
                                             <div class="flex-grow-1 ms-1">
                                                 <h4 class="mb-1 font-size-17">7,854</h4>
-                                                <span class="text-muted font-size-14">Annual income</span>
+                                                <span class="text-muted font-size-14">در آمد سالانه</span>
                                             </div>
 
                                             <div class="flex-shrink-0 text-end">
                                                                 <span
                                                                     class="badge rounded-pill badge-soft-danger font-size-12 fw-medium mb-1"><i
                                                                         class="mdi mdi-arrow-down-bold me-2"></i>$38,580</span>
-                                                <p class="text-muted font-size-14 mb-0">June 2021</p>
+                                                <p class="text-muted font-size-14 mb-0"> 2021</p>
                                             </div>
                                         </div>
                                     </div>
@@ -184,7 +191,7 @@
             <div class="col-xl-4">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title mb-4">Sales Reports</h4>
+                        <h4 class="card-title mb-4">گزارش های فروش</h4>
                         <div class="mt-3">
                             <div id="sales-reports" class="apex-carts"></div>
                         </div>
@@ -193,7 +200,7 @@
                             <div class="col border-end">
                                 <div class="text-center py-2">
                                     <p class="text-uppercase mb-0 text-muted"><i
-                                            class="mdi mdi-circle align-middle font-size-10 me-2 text-primary"></i>Online Sales
+                                            class="mdi mdi-circle align-middle font-size-10 me-2 text-primary"></i>فروش آنلاین
                                     </p>
                                     <h4 class="mt-2 mb-0">65M</h4>
                                 </div>
@@ -201,7 +208,7 @@
                             <div class="col">
                                 <div class="text-center py-2">
                                     <p class="text-uppercase mb-0 text-muted"><i
-                                            class="mdi mdi-circle align-middle font-size-10 me-2 text-danger"></i>Offline Sales
+                                            class="mdi mdi-circle align-middle font-size-10 me-2 text-danger"></i>فروش آفلاین
                                     </p>
                                     <h4 class="mt-2 mb-0">125K</h4>
                                 </div>
@@ -217,7 +224,7 @@
             <div class="col-xl-4">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title">Sales By Social Source</h4>
+                        <h4 class="card-title">فروش بر اساس منبع اجتماعی</h4>
                         <div id="social-sales" class="apex-charts"></div>
                     </div><!-- end card-body -->
                 </div><!-- end card -->
@@ -226,7 +233,8 @@
             <div class="col-xl-4">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title">Customer Review</h4>
+                        <h4 class="card-title">بررسی مشتری
+                        </h4>
                         <div id="carouselExampleInterval" class="carousel slide review-carousel" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active" data-bs-interval="10000">
@@ -326,23 +334,25 @@
 
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title mb-4">Monthly Profits</h4>
+                        <h4 class="card-title mb-4">سود ماهانه</h4>
                         <div class="my-1">
-                            <p class="mb-2">This Month <span class="float-end">75%</span></p>
+                            <p class="mb-2">این ماه75%
+
+                                <span class="float-end">75%</span></p>
                             <div class="progress mt-2" style="height: 6px;">
                                 <div class="progress-bar progress-bar-striped bg-primary" role="progressbar" style="width: 75%"
                                      aria-valuenow="75" aria-valuemin="0" aria-valuemax="75">
                                 </div>
                             </div>
 
-                            <p class="mt-4 mb-2">Last Month <span class="float-end">55%</span></p>
+                            <p class="mt-4 mb-2">ماه گذشته <span class="float-end">55%</span></p>
                             <div class="progress mt-2" style="height: 6px;">
                                 <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 55%"
                                      aria-valuenow="55" aria-valuemin="0" aria-valuemax="55">
                                 </div>
                             </div>
 
-                            <p class="mt-4 mb-2">This Year <span class="float-end">52%</span></p>
+                            <p class="mt-4 mb-2">امسال <span class="float-end">52%</span></p>
                             <div class="progress mt-2" style="height: 6px;">
                                 <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 52%"
                                      aria-valuenow="52" aria-valuemin="0" aria-valuemax="52">
@@ -356,7 +366,7 @@
             <div class="col-xl-4">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title mb-4">Web Analytics</h4>
+                        <h4 class="card-title mb-4">تجزیه و تحلیل وب</h4>
 
                         <div data-simplebar style="max-height: 400px;">
                             <ol class="activity-feed mb-0 ps-3 mt-4 pt-2 pb-0">
@@ -400,17 +410,17 @@
             <div class="col-xl-8">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title mb-4">Top Selling Product</h4>
+                        <h4 class="card-title mb-4">پرفروش ترین محصول</h4>
 
                         <div class="table-responsive">
                             <table class="table table-centered table-nowrap mb-0">
                                 <thead class="thead-light">
                                 <tr>
-                                    <th>Product Name</th>
-                                    <th>Sold Product</th>
-                                    <th>Total Sale</th>
-                                    <th>Stutas</th>
-                                    <th>Action</th>
+                                    <th>نام محصول	</th>
+                                    <th> تعداد محصول فروخته شده 	</th>
+                                    <th>فروش کل	</th>
+                                    <th>در مرحله</th>
+                                    <th>جزیئات</th>
                                 </tr>
                                 </thead>
 
@@ -433,7 +443,7 @@
                                     <td>$120.00</td>
                                     <td><span class="badge rounded-pill badge-soft-success font-size-12">In Stock</span>
                                     </td>
-                                    <td><a href="" class="btn btn-outline-secondary btn-sm">View Details</a></td>
+                                    <td><a href="" class="btn btn-outline-secondary btn-sm">دیدن جزیئات</a></td>
                                 </tr>
 
                                 <tr>
@@ -453,7 +463,7 @@
                                     <td>$60.00</td>
                                     <td><span class="badge rounded-pill badge-soft-success font-size-12">In Stock</span>
                                     </td>
-                                    <td><a href="" class="btn btn-outline-secondary btn-sm">View Details</a></td>
+                                    <td><a href="" class="btn btn-outline-secondary btn-sm">دیدن جزیئات</a></td>
 
                                 </tr>
 
@@ -474,7 +484,7 @@
                                     <td>$650.00</td>
                                     <td><span class="badge rounded-pill badge-soft-danger font-size-12">Out Of Stock</span>
                                     </td>
-                                    <td><a href="" class="btn btn-outline-secondary btn-sm">View Details</a></td>
+                                    <td><a href="" class="btn btn-outline-secondary btn-sm">دیدن جزیئات</a></td>
 
                                 </tr>
 
@@ -496,7 +506,7 @@
                                     <td>$40.00</td>
                                     <td><span class="badge rounded-pill badge-soft-success font-size-12">In Stock</span>
                                     </td>
-                                    <td><a href="" class="btn btn-outline-secondary btn-sm">View Details</a></td>
+                                    <td><a href="" class="btn btn-outline-secondary btn-sm">دیدن جزیئات</a></td>
 
                                 </tr>
 
@@ -517,7 +527,7 @@
                                     <td>$320.00</td>
                                     <td><span class="badge rounded-pill badge-soft-danger font-size-12">Out Of Stock</span>
                                     </td>
-                                    <td><a href="" class="btn btn-outline-secondary btn-sm">View Details</a></td>
+                                    <td><a href="" class="btn btn-outline-secondary btn-sm">دیدن جزیئات</a></td>
 
                                 </tr>
                                 </tbody>
@@ -530,7 +540,8 @@
             <div class="col-xl-4">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title mb-4">Most Sales In Countries</h4>
+                        <h4 class="card-title mb-4">بیشترین فروش در کشورها
+                        </h4>
 
                         <div id="usa-vectormap" style="height: 196px"></div>
 

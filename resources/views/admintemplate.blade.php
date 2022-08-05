@@ -225,10 +225,10 @@
                         <div class="p-3">
                             <div class="row align-items-center">
                                 <div class="col">
-                                    <h6 class="m-0"> Danish Zehen </h6>
+                                    <h6 class="m-0"> علیرضا غلامرضایی </h6>
                                 </div>
                                 <div class="col-auto">
-                                    <a href="#!" class="small"> Available</a>
+{{--                                    <a href="#!" class="small"> Available</a>--}}
                                 </div>
                             </div>
                         </div>
@@ -242,8 +242,8 @@
                                             </span>
                                     </div>
                                     <div class="flex-grow-1 text-truncate">
-                                        <h6 class="mb-1">Profile</h6>
-                                        <p class="mb-0 font-size-12">View personal profile details.</p>
+                                        <h6 class="mb-1">مشخصات</h6>
+{{--                                        <p class="mb-0 font-size-12">View personal profile details.</p>--}}
                                     </div>
                                 </div>
                             </a>
@@ -256,8 +256,8 @@
                                             </span>
                                     </div>
                                     <div class="flex-grow-1 text-truncate">
-                                        <h6 class="mb-1">My Wallet</h6>
-                                        <p class="mb-0 font-size-12">Modify your personal details.</p>
+                                        <h6 class="mb-1">کیف پول</h6>
+{{--                                        <p class="mb-0 font-size-12">Modify your personal details.</p>--}}
                                     </div>
                                 </div>
                             </a>
@@ -270,8 +270,8 @@
                                             </span>
                                     </div>
                                     <div class="flex-grow-1 text-truncate">
-                                        <h6 class="mb-1">Settings <span class="badge bg-success float-end mt-1">11</span></h6>
-                                        <p class="mb-0 font-size-12">Manage your account parameters.</p>
+                                        <h6 class="mb-1">تنظیمات <span class="badge bg-success float-end mt-1">11</span></h6>
+{{--                                        <p class="mb-0 font-size-12">Manage your account parameters.</p>--}}
                                     </div>
                                 </div>
                             </a>
@@ -284,8 +284,8 @@
                                             </span>
                                     </div>
                                     <div class="flex-grow-1 text-truncate">
-                                        <h6 class="mb-1">Lock screen </h6>
-                                        <p class="mb-0 font-size-12">Control your privacy parameters..</p>
+                                        <h6 class="mb-1">قفل صفحه </h6>
+{{--                                        <p class="mb-0 font-size-12">Control your privacy parameters..</p>--}}
                                     </div>
                                 </div>
                             </a>
@@ -294,7 +294,7 @@
                         <div class="pt-2 border-top">
                             <div class="d-grid">
                                 <a class="btn btn-sm btn-link font-size-14 text-center" href="{{ url("admin/logout") }}">
-                                    <i class="ri-shut-down-line align-middle me-1"></i> Logout
+                                    <i class="ri-shut-down-line align-middle me-1"></i> خروج از حساب کاربری
                                 </a>
                             </div>
                         </div>
