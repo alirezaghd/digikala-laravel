@@ -1,31 +1,4 @@
-
-<!doctype html>
-<html lang="fa" dir="rtl">
-
-<head>
-
-    <meta charset="utf-8" />
-    <title>پنل مدیریت فروشگاه</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
-    <meta content="Themesdesign" name="author" />
-    <!-- App favicon -->
-    <link rel="shortcut icon" href="/images/favicon.ico">
-
-    <!-- jquery.vectormap css -->
-    <link href="{{url('/css/jquery-jvectormap-1.2.2.css')}}" rel="stylesheet" type="text/css" />
-
-    <!-- Bootstrap Css -->
-    <link href="{{url('/css/bootstrap-rtl.min.css')}}" id="bootstrap-style" rel="stylesheet" type="text/css" />
-    <link href="{{url('/css/bootstrap.rtl.css')}}" rel="stylesheet" >
-    <!-- Icons Css -->
-    <link href="{{url('/css/icons.min.css')}}" rel="stylesheet" type="text/css" />
-    <!-- App Css-->
-    <link href="{{url('/css/app-rtl.min.css')}}" id="app-style" rel="stylesheet" type="text/css" />
-
-
-
-</head>
+@include("admin_header")
 
 <body data-topbar="dark">
 
@@ -320,7 +293,7 @@
                         <!-- item-->
                         <div class="pt-2 border-top">
                             <div class="d-grid">
-                                <a class="btn btn-sm btn-link font-size-14 text-center" href="javascript:void(0)">
+                                <a class="btn btn-sm btn-link font-size-14 text-center" href="{{ url("admin/logout") }}">
                                     <i class="ri-shut-down-line align-middle me-1"></i> Logout
                                 </a>
                             </div>
@@ -432,27 +405,9 @@
 <!-- /Right-bar -->
 
 <!-- Right bar overlay-->
-<div class="rightbar-overlay"></div>
+{{--<div class="rightbar-overlay"></div>--}}
 
-<!-- JAVASCRIPT -->
-<script src="{{ url('/js/jquery.min.js')}}"></script>
-<script src="{{ url('/js/bootstrap.bundle.min.js')}}"></script>
-<script src="{{ url('/js/metisMenu.min.js')}}"></script>
-<script src="{{ url('/js/simplebar.min.js')}}"></script>
-<script src="{{ url('/js/waves.min.js')}}"></script>
-
-
-<!-- apexcharts -->
-<script src="{{ url('/js/apexcharts.min.js')}}"></script>
-
-<!-- jquery.vectormap map -->
-<script src="{{ url('/js/jquery-jvectormap-1.2.2.min.js')}}"></script>
-<script src="{{ url('/js/jquery-jvectormap-us-merc-en.js')}}"></script>
-
-<script src="{{ url('/js/dashboard.init.js')}}"></script>
-
-<!-- App js -->
-<script src="{{ url('/js/app.js')}}"></script>
+@include("admin_footer")
 </body>
 
 </html>

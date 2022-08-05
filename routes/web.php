@@ -33,27 +33,32 @@ Route::get('/logout', [UserController::class,"logout"]);
 Route::get('/profile', [UserController::class,"profile"])->middleware("auth");
 
 
-Route::get('/admin', [AdminController::class,"index"]);
-Route::get('/admin/cities', [CityController::class,"get_all"]);
-
-Route::get('/admin/cities/add', [CityController::class,"add_get"]);
-Route::post('/admin/cities/add', [CityController::class,"add_post"]);
-
-Route::get('/admin/cities/edit/{id}', [CityController::class,"edit_get"]);
-Route::post('/admin/cities/edit', [CityController::class,"edit_post"]);
-
-Route::get('/admin/cities/delete/{id}', [CityController::class,"delete"]);
-
-Route::get('/admin/productsList', [ProductController::class,"get_all_admin"]);
-
-Route::get('/admin/product/add', [ProductController::class,"add_get"]);
-Route::post('/admin/product/add', [ProductController::class,"add_post"]);
-
-Route::get('/admin/product/edit/{id}', [ProductController::class,"edit_get"]);
-Route::post('/admin/product/edit', [ProductController::class,"edit_post"]);
-
-Route::get('/admin/product/delete/{id}', [ProductController::class,"delete"]);
+Route::get('/admin/login', [AdminController::class,"login_get"]);
+Route::post('/admin/login', [AdminController::class,"login_post"]);
+Route::get('/admin/logout', [AdminController::class,"logout"]);
 
 
-Route::get('/admin/orderList', [OrderController::class,"get_all"]);
-Route::get('/admin/order/delete/{id}', [OrderController::class,"delete"]);
+Route::get('/admin', [AdminController::class,"index"])->middleware("auth");;
+Route::get('/admin/cities', [CityController::class,"get_all"])->middleware("auth");;
+
+Route::get('/admin/cities/add', [CityController::class,"add_get"])->middleware("auth");;
+Route::post('/admin/cities/add', [CityController::class,"add_post"])->middleware("auth");;
+
+Route::get('/admin/cities/edit/{id}', [CityController::class,"edit_get"])->middleware("auth");;
+Route::post('/admin/cities/edit', [CityController::class,"edit_post"])->middleware("auth");;
+
+Route::get('/admin/cities/delete/{id}', [CityController::class,"delete"])->middleware("auth");;
+
+Route::get('/admin/productsList', [ProductController::class,"get_all_admin"])->middleware("auth");;
+
+Route::get('/admin/product/add', [ProductController::class,"add_get"])->middleware("auth");;
+Route::post('/admin/product/add', [ProductController::class,"add_post"])->middleware("auth");;
+
+Route::get('/admin/product/edit/{id}', [ProductController::class,"edit_get"])->middleware("auth");;
+Route::post('/admin/product/edit', [ProductController::class,"edit_post"])->middleware("auth");;
+
+Route::get('/admin/product/delete/{id}', [ProductController::class,"delete"])->middleware("auth");;
+
+
+Route::get('/admin/orderList', [OrderController::class,"get_all"])->middleware("auth");;
+Route::get('/admin/order/delete/{id}', [OrderController::class,"delete"])->middleware("auth");;

@@ -17,19 +17,13 @@ class UserController extends Controller
     function login_post (Request $request)
     {
 
-//        if (is_numeric($request->get('email'))) {
-//            return ['phone' => $request->get('email'), 'password' => $request->get('password')];
-//        } elseif (filter_var($request->get('email'), FILTER_VALIDATE_EMAIL)) {
-//            return ['email' => $request->get('email'), 'password' => $request->get('password')];
-//        }
-//        return ['username' => $request->get('email'), 'password' => $request->get('password')];
 
-        if(Auth::attempt(['email'=>$request['email'],'password'=>$request['password']]))
+        if(Auth::attempt(['email'=>$request['email'],'password'=>$request['password'],'roles'=> 0]))
         {
             return redirect("/profile")->with([
                 "message" => "شما با موفقیت وارد شدید"
             ]);
-        } elseif (Auth::attempt(['mobile' => $request['email'], 'password'=>$request['password']])){
+        } elseif (Auth::attempt(['mobile' => $request['email'], 'password'=>$request['password'],'roles'=> 0 ])){
             return redirect("/profile")->with([
                 "message" => "شما با موفقیت وارد شدید"
             ]);
@@ -53,6 +47,13 @@ class UserController extends Controller
 
     function register_post(Request $request){
 
+        $this->validate($request, [
+            'email' => 'required|unique:users',
+            'name' => 'required|max:120',
+            'password' => 'required|min:3',
+            'password_confirmation' => 'same:password'
+        ]);
+
 
         $new_user = new User();
         $new_user->name = $request["name"];
@@ -61,6 +62,7 @@ class UserController extends Controller
         $new_user->email = $request["email"];
         $new_user->city_id = $request["city"];
         $new_user->adress = $request["address"];
+        $new_user->roles = 0;
         $new_user->password = bcrypt($request["password"]);
         $new_user->save();
 
