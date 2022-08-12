@@ -6,6 +6,8 @@ use App\Models\Category;
 use App\Models\Image;
 use App\Models\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
 
 class ProductController extends Controller
 {
@@ -14,7 +16,7 @@ class ProductController extends Controller
         $product = Product::find($id);
 
         return view("product",[
-            'products' => $product
+            'product' => $product
 
         ]);
     }
@@ -38,6 +40,11 @@ class ProductController extends Controller
         $new_product->category_id=$request["category_id"];
         $new_product->price_off=$request["priceOff"];
         $new_product->save();
+
+        $new_image = new Image();
+        $new_image->url =$request["image"];
+
+        $new_product->images()->save($new_image);
 
         $message = "محصول جدید اضافه شد";
         $message_type = "success";
@@ -87,6 +94,7 @@ class ProductController extends Controller
         }
         else{
             $product->delete();
+            $product->images()->delete();
             $message = "با موفقیت حذف شد";
             $message_type = "success";
 
@@ -131,6 +139,8 @@ class ProductController extends Controller
     function comments(){
 
     }
+
+
 
     function like(){
 

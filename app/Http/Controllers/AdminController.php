@@ -19,12 +19,15 @@ class AdminController extends Controller
     function login_post (Request $request)
     {
 
-        if(Auth::attempt(['email'=>$request['email'],'password'=>$request['password'],'roles'=> 1]))
+//        $remember_me = $request->has('remember_me') ? true : false;
+
+        if(Auth::attempt(['email'=>$request['email'],'password'=>$request['password'],'roles'=> 1], $request["remember_me"] ))
         {
+
             return redirect("/admin")->with([
                 "message" => "شما با موفقیت وارد شدید"
             ]);
-        } elseif (Auth::attempt(['mobile' => $request['email'], 'password'=>$request['password'],'roles'=> 1 ])){
+        } elseif (Auth::attempt(['mobile' => $request['email'], 'password'=>$request['password'],'roles'=> 1], $request["remember_me"])){
             return redirect("/admin")->with([
                 "message" => "شما با موفقیت وارد شدید"
             ]);

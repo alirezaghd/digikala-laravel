@@ -7,6 +7,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\CityController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\CommentController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,6 +22,12 @@ use App\Http\Controllers\UserController;
 Route::get('/', [HomeController::class,"index"]);
 Route::get('/product/{id}', [ProductController::class,"get"]);
 Route::get('/products', [ProductController::class,"get_all"]);
+
+
+
+Route::post('/send-comment', [CommentController::class,"send_comment"]);
+
+
 
 Route::get('/login', [UserController::class,"login_get"]);
 Route::post('/login', [UserController::class,"login_post"]);
@@ -62,3 +69,9 @@ Route::get('/admin/product/delete/{id}', [ProductController::class,"delete"])->m
 
 Route::get('/admin/orderList', [OrderController::class,"get_all"])->middleware("auth");;
 Route::get('/admin/order/delete/{id}', [OrderController::class,"delete"])->middleware("auth");;
+
+
+
+Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
+    \UniSharp\LaravelFilemanager\Lfm::routes();
+});

@@ -39,7 +39,7 @@
                                 </div>
 
                                 <div class="form-check mt-3">
-                                    <input type="checkbox" class="form-check-input" id="auth-remember-check">
+                                    <input type="checkbox" class="form-check-input" name="remember_me" id="auth-remember-check">
                                     <label class="form-check-label" for="auth-remember-check">یادآوری</label>
                                 </div>
 

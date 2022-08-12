@@ -4,7 +4,10 @@
 <script src="{{ url('/js/metisMenu.min.js')}}"></script>
 <script src="{{ url('/js/simplebar.min.js')}}"></script>
 <script src="{{ url('/js/waves.min.js')}}"></script>
-
+<script src="{{ url('/vendor/laravel-filemanager/js/stand-alone-button.js')}}"></script>
+<script>
+    $('#lfm').filemanager('image');
+</script>
 
 <!-- apexcharts -->
 <script src="{{ url('/js/apexcharts.min.js')}}"></script>

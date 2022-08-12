@@ -17,8 +17,6 @@ class UserController extends Controller
     function login_post (Request $request)
     {
 
-<<<<<<< HEAD
-=======
 
 //        if (is_numeric($request->get('email'))) {
 //            return ['phone' => $request->get('email'), 'password' => $request->get('password')];
@@ -26,14 +24,14 @@ class UserController extends Controller
 //            return ['email' => $request->get('email'), 'password' => $request->get('password')];
 //        }
 //        return ['username' => $request->get('email'), 'password' => $request->get('password')];
->>>>>>> fac3844f5668d5e1c0fab0698172d34496bffa13
 
-        if(Auth::attempt(['email'=>$request['email'],'password'=>$request['password'],'roles'=> 0]))
+
+        if(Auth::attempt(['email'=>$request['email'],'password'=>$request['password'],'roles'=> 0], $request["remember_me"]))
         {
             return redirect("/profile")->with([
                 "message" => "شما با موفقیت وارد شدید"
             ]);
-        } elseif (Auth::attempt(['mobile' => $request['email'], 'password'=>$request['password'],'roles'=> 0 ])){
+        } elseif (Auth::attempt(['mobile' => $request['email'], 'password'=>$request['password'],'roles'=> 0 ], $request["remember_me"])){
             return redirect("/profile")->with([
                 "message" => "شما با موفقیت وارد شدید"
             ]);
@@ -56,13 +54,6 @@ class UserController extends Controller
     }
 
     function register_post(Request $request){
-        
-             $this->validate($request, [
-            'email' => 'required|unique:users',
-            'name' => 'required|max:120',
-            'password' => 'required|min:8',
-            'password_confirmation' => 'same:password'
-        ]);
 
         $this->validate($request, [
             'email' => 'required|unique:users',
